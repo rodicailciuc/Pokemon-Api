@@ -2,12 +2,14 @@
 
 ## Must-Haves
 
-> these are necessary for basic usability
+- [ ] Fetch and display pokemons.
+- [ ] Implement a button to fetch a new pokemon.
 
 ## Should-Haves
 
-> these will complete the user experience, but are not necessary
+- [ ] Apply basic styling.
+- [ ] Implement error handling.
 
 ## Could-Haves
 
-> would be really cool ... if there's time
+- [ ] Add animation effects.

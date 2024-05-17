@@ -1,17 +1,20 @@
-# Image gallery
+# Search Pokemon By Id
 
-> A simple
+> PokeFetch is an app for accessing Pokémon data from the Pokémon API. It lets
+> users search for Pokémon by name or ID, view details like abilities and stats,
+> mark favorites, and explore random Pokémon.
 
 ## Table of contents
 
-- [General info](#general-info)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Features](#features)
-- [Status](#status)
-- [Inspiration](#inspiration)
-- [Contact](#contact)
+- [Search Pokemon By Id](#search-pokemon-by-id)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Code Examples](#code-examples)
+  - [Status](#status)
+  - [Contact](#contact)
 
 ## General info
 
@@ -20,7 +23,7 @@
 
 ## Screenshots
 
-![Example screenshot]()
+![Example screenshot](./assets/Capture%20d’écran%202024-05-17%20090052.png)
 
 ## Technologies
 
@@ -36,26 +39,21 @@ clone the repo and start using the stop watch.
 ## Code Examples
 
 ```js
-
+if (Number.isNaN(id) || id <= 0) {
+	pokemonData.id = null;
+	dom.error.innerText = 'Please enter a valid Pokémon ID.';
+	dom.root.append(dom.error);
+	if (pokemonExist) {
+		pokemonExist.remove();
+	}
+	return;
+}
 ```
-
-## Features
-
-List of features ready and Todos for future development
-
--
--
--
-
-To-do list:
-
--
--
 
 ## Status
 
 Project is: _in progress_
 
-## Inspiration
-
 ## Contact
+
+[Rodica](https://github.com/rodicailciuc)
