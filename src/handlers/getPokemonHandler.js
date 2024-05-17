@@ -46,6 +46,10 @@ const getPokemonHandler = async () => {
 
     // add id to data
     pokemonData.id = id;
+
+    dom.input.value = '';
+    pokemonData.id = value;
+
 };
 
 export default getPokemonHandler;
